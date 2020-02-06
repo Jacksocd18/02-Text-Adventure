@@ -1,0 +1,117 @@
+{
+	"BEDROOM": {
+		"name": "Unknown Bedroom",
+		"desc": "You are standing in a room that doesn't belong to you. There is an unmade bed with a wooden dresser beside it. ",
+		"exits": [{
+			"exit": "DARK HALLWAY",
+			"target": "DARKHALLWAY"
+		}, {
+			"exit": "BATHROOM",
+			"target": "BATHROOM"
+		}],
+		"items": []
+    }
+    ,"DARKHALLWAY": {
+		"name": "Dark Hallway",
+		"desc": " You are staring down a long dark pathway ahead of you. There very minimal light but many doors around. ",
+		"exits": [{
+			"exit": "BEDROOM",
+			"target": "BEDREOOM"
+		},{
+            "exit": "LEFT DOOR",
+            "target": "LEFTDOOR"
+        },{ 
+            "exit": "FURTHER DOWN",
+			"target": "FURTHERDOWN"
+        }],
+		"items": [{
+            "item":"CROWBAR"
+            ,"desc":"A rusty metal crowbar found lying on the ground"
+            ,"take":"You stumble across a rusty crowbar on the ground and decide to pick it up"
+        }]   
+    }
+    ,"BATHROOM":{
+        "name": "BATHROOM",
+		"desc": "You are in a small bathroom. There is a toilet, sink, and a walk-in shower ",
+		"exits": [{
+			"exit": "BEDROOM",
+			"target": "BEDREOOM"
+        }],
+        "items": []
+    }
+    ,"LEFTDOOR":{
+        "name": "LEFT DOOR",
+		"desc": "You are in a very large room, but it is unordinarily empty ",
+		"exits": [{
+			"exit": "DARK HALLWAY",
+			"target": "DARKHALLWAY"
+        }],
+        "items": []
+    }
+    ,"FURTHERDOWN":{
+        "name": "FURTHER DOWN",
+		"desc": "You have moved further down the long hallway. Next to you there are some stairs leading downward.",
+		"exits": [{
+			"exit": "DOWNSTAIRS",
+			"target": "DOWNSTAIRS"
+        },{
+            "exit": "END OF HALLWAY",
+			"target": "ENDOFHALLWAY"
+        }],
+        "items": []
+        }
+    ,"ENDOFTHEHALLWAY":{
+        "name": "End of the Hallway",
+        "desc": "You are in a dark corner of the hallway with a light coming from a crack in the foundation.",
+        "exits": [{
+            "exit": "DARK HALLWAY",
+            "target": "DARKHALLWAY"
+        }],
+        "items": []
+    }
+    ,"DOWNSTAIRS":{
+        "name": "Downstairs",
+		"desc": "You go downstairs to find yourself in a living area with an old timey radio playing a tone on repeat.",
+		"exits": [{
+			"exit": "KITCHEN",
+			"target": "KITCHEN"
+        },{
+            "exit": "FRONT DOOR",
+			"target": "FRONTDOOR"
+        }],
+        "items": []
+        }
+    ,"KITCHEN":{
+        "name": "Kitchen",
+        "desc": "You are in a Kitchen with a table, fridge, and an open door that leads outside.",
+        "exits": [{
+            "exit": "OUTSIDE",
+            "target": "OUTSIDE"
+        }],
+        "items": []
+    }
+    ,"OUTSIDE":{
+        "name": "Outside",
+        "desc": "You are outside. The air is fresh, it is a nice day out.",
+        "exits": [{
+            "exit": "KITCHEN",
+            "target": "KITCHEN"
+        },{
+            "exit": "FRONT DOOR",
+            "target": "FRONTDOOR"
+        }],
+        "items": []
+    }
+    ,"FRONTDOOR":{
+        "name": "Front Door",
+        "desc": "The front door leads to outside.",
+        "exits": [{
+            "exit": "OUTSIDE",
+            "target": "OUTSIDE"
+        },{
+            "exit": "DOWN STAIRS",
+            "target": "DOWNSTAIRS"
+        }],
+        "items": []
+    }
+}
